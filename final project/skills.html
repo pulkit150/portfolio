@@ -1,0 +1,179 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="h1">SKILLS & PROJECTS</h1>
+    <div class="div1">
+        <div class="box"><span id="high"><i>A</i></span>bility to work under pressure</div>
+        <div class="box"><span id="high"><i>T</i></span>eamwork</div>
+        <div class="box"><span id="high"><i>T</i></span>ime management</div>
+        <div class="box"><span id="high"><i>P</i></span>roject management</div>
+        <div class="box"><span id="high"><i>C</i></span>reative problem solving</div>
+    </div>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill Progress Bars - Dark Theme</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+  font-family: sans-serif;
+  background-color: #222;
+  color: #ddd;
+}
+
+
+body {
+        background-color: #222;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Progress Bar Styles */
+    .progress-container {
+        width: 80%;
+        margin: 50px auto;
+    }
+    
+    .progress-bar {
+        width: 100%;
+        background-color: #444;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .progress {
+        width: 80%;
+        height: 30px;
+        background-color: #4CAF50;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .progress-text {
+        text-align: center;
+    }
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress-bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skill {
+  margin-bottom: 15px;
+  text-align: center;
+  width: 200px; /* Adjust width as needed */
+}
+
+.skill p {
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar[data-width] {
+  background-image: linear-gradient(to right, #4CAF50 data-width% , #333 0%);
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px;
+}
+
+.pr{
+    background-color: #000;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid red;
+}
+</style>
+</head>
+<body>
+  <h1 style="background-color: #222;">Key Skills</h1>
+  <div class="progress-bars">
+    <div class="skill">
+      <p>HTML & CSS</p>
+      <div class="progress-bar" data-width="87">
+<div class="progress"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="progress-bar" data-width="70">
+        <div class="progress" style="width:20% ;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <p>C Programming</p>
+      <div class="progress-bar" data-width="50">
+        <div class="progress" style="width:80% ;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <p>DSA</p>
+      <div class="progress-bar" data-width="60">
+        <div class="progress" style="width:40% ;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <p>C++ Programming</p>
+      <div class="progress-bar" data-width="40">
+        <div class="progress" style="width: 75%;"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="project" style="background-color: #222;">
+    <div class="pr">
+        <h2>Youtube Clone</h2>
+        <p>This is just a clone of actual youtube website with the use of HTML and CSS
+<br>
+            <a href="https://pulkit150.github.io/youtube-clone-website/" target="_blank">https://pulkit150.github.io/youtube-clone-website/</a>
+        </p>
+    </div>
+    <div class="pr">
+        <h2>Netflix Clone</h2>
+        <p> In this project, you created a UI replica of the Netflix website. The clone offers an immersive experience similar to the original platform and features responsive design for seamless access across various devices. This project highlights your skills in web/app development and attention to detail.</p>
+    </div>
+    <div class="pr">
+        <h2>Rock Paper and Scissors</h2>
+        <p>This project involved designing and implementing a classic Rock Paper Scissors game using HTML, CSS, and JavaScript. The game features a visually appealing interface with responsive design, allowing users to enjoy a delightful gaming experience.</p>
+    </div>
+</div>
+
+
+
+  <a id="home" href="index.html">HOME</a>
+</body>
+
+</html>
